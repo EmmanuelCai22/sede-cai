@@ -1,0 +1,111 @@
+/*  navbar espacio interno, fuente y tam del texto */
+.navbar {
+  padding: 0.5rem 1rem; 
+  font-family: 'Barlow Condensed', sans-serif; 
+  font-size: 18px; 
+}
+
+/* nombre logo */
+.navbar-brand span {
+  letter-spacing: 4px; /* Espaciado entre letras */
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+}
+
+/* color de texto y margin de link */
+.nav-link {
+  color: #212529 !important; 
+  margin-left: 15px; 
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 25px;
+}
+
+/* hover en la navbar */
+.nav-link:hover {
+  color: #c00 !important; /* Rojo al pasar el mouse */
+}
+
+/* css del foter */
+.footer-cai {
+  background-color: #000; /* fondo negro */
+  color: #fff; /* texto blanco */
+  padding: 60px 20px 30px; /* espaciado interno */
+  font-family: 'Poppins', sans-serif; /* fuente del footer */
+  margin-top: 60px; /* separación con contenido anterior */
+}
+
+/* Contenedor interno del footer */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  gap: 40px; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cada columna del footer */
+.footer-col {
+  flex: 1 1 250px;
+}
+
+/* Logo en el footer */
+.footer-logo {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+/* Descripción del club en el footer */
+.footer-desc {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Título de cada columna */
+.footer-col h4 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #ff4d4d; /* Rojo fuerte */
+}
+
+/* Lista de enlaces sin estilos de lista */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Separación entre cada ítem */
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+/* css de los enlaces de la lista */
+.footer-col ul li a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Hover de enlaces y redes sociales */
+.footer-col ul li a:hover,
+.social-links a:hover {
+  color: #ff4d4d;
+}
+
+/* css de los íconos de redes sociales */
+.social-links a {
+  color: inherit;
+  margin-right: 15px;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+/* linea inferior del footer */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  font-size: 0.85rem;
+  color: #aaa;
+}

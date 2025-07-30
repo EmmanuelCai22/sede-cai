@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pago - Tienda Roja</title>
+    <link rel="icon" href="../IMAGENES/escudo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/pagostore.css">
+    <link rel="stylesheet" href="../css/general.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand me-4" href="../STORE CAI/store.html">
+                <img src="../IMAGENES/escudo.png" alt="logo" height="50">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarCAI">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="../STORE CAI/store.html">Volver a la tienda</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- FORMULARIO DE PAGO -->
+    <main class="pago-section">
+        <h1>Finalizá tu compra</h1>
+
+        <form class="formulario-pago">
+            <h2>Datos de envío</h2>
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="text" placeholder="Dirección" required>
+            <input type="text" placeholder="Ciudad" required>
+            <input type="text" placeholder="Código postal" required>
+            <input type="email" placeholder="Correo electrónico" required>
+
+            <h2>Datos de la tarjeta</h2>
+            <input type="text" placeholder="Nombre titular" required>
+            <input type="text" placeholder="Número de tarjeta" maxlength="19" required>
+            <div class="fila">
+                <input type="text" placeholder="MM/AA" maxlength="5" required>
+                <input type="text" placeholder="CVV" maxlength="4" required>
+            </div>
+
+            <button type="submit">Pagar</button>
+        </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-cai">
+        <div class="footer-container">
+            <div class="footer-col">
+                <img src="../IMAGENES/escudo.png" alt="Logo CAI" class="footer-logo">
+                <p class="footer-desc">La pasión que nos une. Orgullo rojo desde Avellaneda para el mundo.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Secciones</h4>
+                <ul>
+                    <li><a href="../SEDE CAI/inicio.html">Inicio</a></li>
+                    <li><a href="../SEDE CAI/store.html">Tienda</a></li>
+                    <li><a href="../SEDE CAI/asociate.html">Asóciate</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Seguinos</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/caindependiente/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/Independiente/"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.youtube.com/@Independiente"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Club Atlético Independiente · Todos los derechos reservados
+        </div>
+    </footer>
+
+    <script src="../JS/pago.js"></script>
+
+</body>
+
+</html>

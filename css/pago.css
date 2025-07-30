@@ -1,0 +1,91 @@
+/* Fondo, y fuente */
+body {
+  font-family: 'Barlow Condensed', sans-serif;
+  background: linear-gradient(to bottom, #8a0000, #4a0000);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Contenedor principal del pago */
+.pago {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+/* Estilo general del formulario */
+.pago form {
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Título del formulario */
+.pago h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+/* negrita subtitulos */
+.pago label {
+  font-weight: bold;
+}
+
+/* Inputs y selects */
+.pago input,
+.pago select {
+  padding: 10px;
+  border: none;
+  border-radius: 100px;
+  background-color: #fff;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* css de btn de pagar */
+.boton-pago {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #b00000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover del botón */
+.boton-pago:hover {
+  background-color: #8b0000;
+}
+
+/* Oculta flechas de input  */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+  .pago form {
+    padding: 25px 10px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,84 @@
+/* fondo en degradé rojo a negro */
+body {
+  background: linear-gradient(to bottom, #9f0000, #000000);
+  min-height: 100vh;
+}
+
+/* contenedor principal grid 3x2 */
+.imagenes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 100px 90px;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+/* cada banner individual */
+.baners {
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* hover del banner */
+.baners:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* imagen de cada banner */
+.baners img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* texto sobre la imagen */
+.texto {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  background: #c00000;
+  color: white;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* texto alineado a la derecha */
+.texto.derecha {
+  left: auto;
+  right: 0px;
+}
+
+/* contenedor bloqueado */
+.bloqueado {
+  position: relative;
+  overflow: hidden;
+}
+
+/* blur solo socios bloqueado */
+.overlay-glass {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 2;
+  pointer-events: none;
+  border-radius: 10px;
+}

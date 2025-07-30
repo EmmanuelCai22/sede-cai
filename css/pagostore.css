@@ -1,0 +1,60 @@
+/* css del body gral */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centra la sección de pago y le da espacio interno*/
+.pago-section {
+  padding: 60px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Título principal */
+.pago-section h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/*  Layout del form */
+.formulario-pago {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* css del form y inputs */
+.formulario-pago input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Botón de envío */
+.formulario-pago button {
+  background-color: #000;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Hover del botón */
+.formulario-pago button:hover {
+  background-color: #444;
+}
+

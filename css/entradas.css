@@ -1,0 +1,126 @@
+/* fondo degradado, fuente general, color y altura mínima */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+  background: linear-gradient(to bottom right, #1a1a1a, #300000);
+  color: white;
+  min-height: 100vh;
+}
+
+/* contenedor de imagen y formulario en fila */
+.formulario-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 40px;
+  max-width: 1320px;
+  margin: 120px auto;
+}
+
+/* box del formulario con fondo y blur */
+.formulario-box {
+  flex: 1 1 400px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 40px;
+  color: white;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  height: 624px;
+}
+
+/* título principal centrado */
+.formulario-box h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* acomoda el form flex */
+.formulario-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* color de fondo de las opciones del select */
+option {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+/* css selecc form */
+.formulario-box select {
+  padding: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+}
+
+/* efecto hover */
+.formulario-box select:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* botón principal con fondo rojo y efecto hover */
+.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #e60026;
+  color: white !important;
+  padding: 14px 0;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+
+/* efecto hover */
+.btn:hover {
+  background-color: #c40022;
+  transform: scale(1.05);
+  color: white !important;
+}
+
+/* contenedor para la imagen */
+.formulario-imagen {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* imagen con borde redondeado y sombra */
+.formulario-imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  /* apila los elementos verticalmente */
+  .formulario-container {
+    flex-direction: column;
+  }
+
+  /* ocupan todo el ancho en mobile */
+  .formulario-imagen,
+  .formulario-box {
+    width: 100%;
+  }
+}

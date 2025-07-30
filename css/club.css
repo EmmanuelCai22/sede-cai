@@ -1,0 +1,171 @@
+/* body  fondo oscuro, tipografía general y color  */
+body {
+  font-family: 'Titillium Web', sans-serif;
+  background-color: #0d0d0d;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+/* h1, h2, h3  fuentes y css para títulos */
+h1, h2, h3 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #e60000;
+}
+
+/* sección principal con imagen de fondo */
+.club-hero {
+  background: url("../IMAGENES/saludo.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  padding-top: 90px;
+  color: white;
+  position: relative;
+}
+
+/* capa oscura encima del fondo y centrado */
+.club-hero .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+/* contenedor del texto central */
+.club-hero .contenido {
+  max-width: 1000px;
+  text-align: center;
+}
+
+/* título principal destacado */
+.club-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #ff2e2e;
+}
+
+/* párrafos dentro del hero */
+.club-hero p {
+  font-size: 1.2rem;
+  text-align: justify;
+  color: #f0f0f0;
+}
+
+
+/*enlaces sin subrayado */
+.link-palmares {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*  sección de trofeos */
+.palmares {
+  background-color: #0e0e0e;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+/* título grande de la sección */
+.titulo-palmares {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+/*contenedor flexible de trofeos */
+.trofeos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* contenedor individual de cada trofeo */
+.trofeo {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* blanco invertido con hover */
+.trofeo img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  filter: brightness(100%) invert(100%);
+  transition: transform 0.3s ease;
+}
+
+/* hover sobre imagen del trofeo */
+.trofeo img:hover {
+  transform: scale(1.1);
+}
+
+/* texto debajo del trofeo */
+.trofeo p {
+  margin-top: 12px;
+  font-weight: bold;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* sección de instalaciones */
+.infraestructura-cai {
+  padding: 60px 20px;
+  margin: 100px auto 80px;
+  background: #0f0f0f;
+  max-width: 1200px;
+}
+
+/* títulos en infraestructura */
+.infraestructura-cai h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* texto debajo del título */
+.subtitulo {
+  text-align: center;
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+/*  cada bloque de contenido */
+.infraestructura-box {
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
+}
+
+/* imagen dentro del box */
+.infraestructura-box img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+}
+
+/* subtítulo del box */
+.infraestructura-box h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+/* párrafo del box */
+.infraestructura-box p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}

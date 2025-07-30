@@ -1,0 +1,48 @@
+/* fondo general y fuente */
+body {
+  background: linear-gradient(to bottom, #1a1a1a, #000000);
+  color: #f0f0f0;
+  font-family: 'Barlow Condensed', sans-serif;
+  padding-top: 100px;
+}
+
+/* título de sección principal */
+.seccion-titulo {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #ff3333;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* bloque de cada categoria */
+.categoria {
+  background-color: #1f1f1f;
+  border-left: 5px solid #c00000;
+  padding: 30px 25px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+/* hover de cada categoria */
+.categoria:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.2);
+}
+
+/* tamaño del emoji*/
+.categoria h3 .emoji {
+  margin-right: 8px;
+  font-size: 1.4rem;
+}
+
+/* espacio entre cada lista y tamaño */
+.categoria li {
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+  font-size: 1.1rem;
+}
+

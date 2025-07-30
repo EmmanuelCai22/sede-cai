@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>TIENDA ROJA</title>
+  <link rel="icon" href="../IMAGENES/escudo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fuentes y estilos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/store.css">
+  <link rel="stylesheet" href="../css/general.css">
+</head>
+
+<body>
+  <!-- Aviso superior -->
+  <div class="textosuperior">
+    Retirá gratis en Avenida Mitre 470, Avellaneda y Boyacá 470, CABA.
+  </div>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand me-4" href="../STORE CAI/store.html">
+        <img src="../IMAGENES/escudo.png" alt="logo" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCAI">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCAI">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#camisetas">Camisetas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#buzos">Buzos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#camperas">Camperas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pantalones">Pantalones</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" class="text-white position-relative">
+            <i class="bi bi-cart"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <!-- Carrusel de promociones -->
+  <swiper-container class="mySwiper" navigation="true" loop="true" autoplay-delay="3000">
+    <swiper-slide>¡Aprovechá las 6 Cuotas sin interés con todos los bancos!</swiper-slide>
+    <swiper-slide>Envío gratis a partir de $255.000</swiper-slide>
+    <swiper-slide>Pedí hoy, ¡Te llega mañana! Exclusivo CABA y GBA</swiper-slide>
+  </swiper-container>
+
+  <!-- Hero principal -->
+  <section class="hero">
+    <img src="../IMAGENES/hero.jpg" alt="Hero Independiente" class="hero-img">
+  </section>
+
+  <main class="productos">
+    <!-- Camisetas -->
+    <section id="camisetas">
+      <h2 class="titulo">Camisetas</h2>
+      <div class="contenedor">
+        <div class="productos-inicio">
+          <img src="../IMAGENES/roja.jpeg" alt="Camiseta 1">
+          <h2>Camiseta CAI Home</h2>
+          <select class="talle-select">
+            <option value="" disabled selected>Seleccioná un talle</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+          <div class="precio">$129.999</div>
+          <a href="pagostore.html">
+            <button>Comprar</button>
+          </a>
+        </div>
+
+        <div class="productos-inicio">
+          <img src="../IMAGENES/blanca.png" alt="Camiseta 2">
+          <h2>Camiseta CAI AWAY I</h2>
+          <select class="talle-select">
+            <option value="" disabled selected>Seleccioná un talle</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+          <div class="precio">$129.999</div>
+          <a href="pagostore.html">
+            <button>Comprar</button>
+          </a>
+        </div>
+        
+        <div class="productos-inicio">
+          <img src="../IMAGENES/negra.jpg" alt="Camiseta 3">
+          <h2>Camiseta CAI AWAY II</h2>
+          <select class="talle-select">
+            <option value="" disabled selected>Seleccioná un talle</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+          <div class="precio">$129.999</div>
+          <a href="pagostore.html">
+            <button>Comprar</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buzos -->
+    <section id="buzos">
+      <h2 class="titulo">Buzos</h2>
+      <div class="contenedor">
+        <div class="productos-inicio">
+          <img src="../IMAGENES/buzoblanco.jpeg" alt="Buzo 1">
+          <h2>Buzo blanco CAI</h2>
+          <select class="talle-select">
+            <option value="" disabled selected>Seleccioná un talle</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+          <div class="precio">$89.999</div>
+          <a href="pagostore.html">
+            <button>Comprar</button>
+          </a>
+        </div>
+        <div class="productos-inicio">
+          <img src="../IMAGENES/buzopuma.jpeg" alt="Buzo 2">
+          <h2>Buzo Puma CAI</h2>
+          <select class="talle-select">
+            <option value="" disabled selected>Seleccioná un talle</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+          <div class="precio">89.999</div>
+          <a href="pagostore.html">
+            <button>Comprar</button>
+          </a>
+        </div>
+        <div class="productos-inicio">
+          <img src="../IMAGENES/buzogris1.png" alt="Buzo 3">
+          <h2>Buzo gris de entrenamiento</h2>
+          <select class="talle-select">
+            <option value="" disabled selected>Seleccioná un talle</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+          <div class="precio">$69.999</div>
+          <a href="pagostore.html">
+            <button>Comprar</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Camperas -->
+    <section id="camperas">
+      <h2 class="titulo">Camperas</h2>
+      <div class="contenedor">
+        <div class="productos-inicio">
+          <img src="../IMAGENES/camperaazul1.jpeg" alt="Campera 1">
+          <h2>Campera azul CAI</h2>
+          <select class="talle-select">
+            <option value="" disabled selected>Seleccioná un talle</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+          <div class="precio">$149.999</div>
+          <a href="pagostore.html">
+            <button>Comprar</button>
+          </a>
+        </div>
+        <div class="productos-inicio">
+          <img src="../IMAGENES/camperapumaroja1.jpeg" alt="Campera 2">
+          <h2>Campera roja CAI</h2>
+          <select class="talle-select">
+            <option value="" disabled selected>Seleccioná un talle</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+          <div class="precio">$149.999</div>
+          <a href="pagostore.html">
+            <button>Comprar</button>
+          </a>
+        </div>
+        <div class="productos-inicio">
+          <img src="../IMAGENES/camperablanca1.jpeg" alt="Campera 3">
+          <h2>Campera blanca CAI</h2>
+          <select class="talle-select">
+            <option value="" disabled selected>Seleccioná un talle</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+          <div class="precio">$149.999</div>
+          <a href="pagostore.html">
+            <button>Comprar</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pantalones -->
+    <section id="pantalones">
+      <h2 class="titulo">Pantalones</h2>
+      <div class="contenedor">
+        <div class="productos-inicio">
+          <img src="../IMAGENES/pantalon1.png" alt="Pantalón 1">
+          <h2>Pantalón rojo CAI</h2>
+          <select class="talle-select">
+            <option value="" disabled selected>Seleccioná un talle</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+          <div class="precio">$109.999</div>
+          <a href="pagostore.html">
+            <button>Comprar</button>
+          </a>
+        </div>
+        <div class="productos-inicio">
+          <img src="../IMAGENES/pantalonazul.png" alt="Pantalón 2">
+          <h2>Pantalón largo azul</h2>
+          <select class="talle-select">
+            <option value="" disabled selected>Seleccioná un talle</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+          <div class="precio">$109.999</div>
+          <a href="pagostore.html">
+            <button>Comprar</button>
+          </a>
+        </div>
+        <div class="productos-inicio">
+          <img src="../IMAGENES/short1.png" alt="Pantalón 3">
+          <h2>Short entrenamiento</h2>
+          <select class="talle-select">
+            <option value="" disabled selected>Seleccioná un talle</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+          <div class="precio">$69.999</div>
+          <a href="pagostore.html">
+            <button>Comprar</button>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-cai">
+    <div class="footer-container">
+      <!-- Logo + descripción -->
+      <div class="footer-col">
+        <img src="../IMAGENES/escudo.png" alt="Logo CAI" class="footer-logo">
+        <p class="footer-desc">La pasión que nos une. Orgullo rojo desde Avellaneda para el mundo.</p>
+      </div>
+      <!-- Enlaces -->
+      <div class="footer-col">
+        <h4>Volve a la sede</h4>
+        <ul>
+          <li><a href="../SEDE CAI/inicio.html">Inicio</a></li>
+          <li><a href="../SEDE CAI/club.html">Club</a></li>
+          <li><a href="../SEDE CAI/noticias.html">Noticias</a></li>
+          <li><a href="../SEDE CAI/asociate.html">Asóciate</a></li>
+        </ul>
+      </div>
+      <!-- Redes sociales -->
+      <div class="footer-col">
+        <h4>Seguinos</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/caindependiente/"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/Independiente/"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.youtube.com/@Independiente"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Club Atlético Independiente · Todos los derechos reservados
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</body>
+
+</html>

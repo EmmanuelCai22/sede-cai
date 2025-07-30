@@ -1,0 +1,184 @@
+/* fondo con imagen fija y fuente principal */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../IMAGENES/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* acomoda la columna */
+.entradas, .bonos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 180px 20px 100px 20px;
+}
+
+/* Contenedor oscuro y centrado para títulos de sección */
+.entradas-header, .bono-header {
+  background: rgba(10, 10, 10, 0.92);
+  border-radius: 28px;
+  padding: 48px 32px;
+  box-shadow: 0 6px 36px rgba(0,0,0,0.7);
+  display: inline-block;
+  margin: 40px auto 60px auto;
+  max-width: 60vw;
+  width:642px;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 2
+}
+
+/* titulo principal dentro de headers */
+.entradas-header h1, .bono-header h2 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* Subtítulo del header */
+.entradas-header p, .bono-header p {
+  font-size: 2rem;
+  color: #f8f8f8;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 0;
+}
+
+/* contenedor grid de cada partido */
+.entradas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 50px;
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+/* efecto de las tarjetas */
+.entradas-bloque, .bono {
+  background: rgba(15, 15, 15, 0.75);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(46, 7, 7, 0.5);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* tamaño de tarjetas de entradas */
+.entradas-bloque {
+  padding: 100px 60px;
+}
+
+/* tamaño de tarjetas de bonos */
+.bono {
+  padding: 50px 35px;
+  width: 450px;
+  max-width: 90%;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+}
+
+/*  hover en tarjetas */
+.entradas-bloque:hover, .bono:hover {
+  transform: translateY(-8px);
+  background: rgba(15, 15, 15, 0.9);
+}
+
+/* titulos dentro de tarjetas */
+.entradas-bloque h3, .bono h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+}
+
+/* Texto dentro de las tarjetas */
+.entradas-bloque p, .bono p {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* p del bono */
+.bono p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+/* Botones para comprar entradas y bonos */
+.entradas-bloque button, .bono button {
+  padding: 25px 25px;
+  background: #e10000;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1.8rem;
+}
+
+/* Hover en botones */
+.entradas-bloque button:hover, .bono button:hover {
+  background: #a40000;
+}
+
+/* coloca los bonos horizontalmente */
+.bono-container {
+  display: flex;
+  gap: 90px;
+  justify-content: center;
+}
+
+
+/* responsive */
+@media (max-width: 768px) {
+
+  /* ajustes de sección entradas */
+  .entradas {
+    padding: 40px 16px;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* grid a columna */
+  .entradas-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Ajustes de sección bonos */
+  .bonos {
+    padding: 40px 16px;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Pasa los bonos a una columna */
+  .bono-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+  }
+
+  /* ajuste para evitar que se mueva*/
+  .bono {
+    width: 100%;
+    max-width: 380px;
+    padding: 40px 20px;
+  }
+}
